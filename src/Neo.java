@@ -84,7 +84,6 @@ public class Neo extends Thread {
         while(attempts < 10){
             int dx = dirs[random.nextInt(3)];
             int dy = dirs[random.nextInt(3)];
-            // avoid standing still
             if(dx == 0 && dy == 0){ attempts++; continue; }
             nx = x + dx;
             ny = y + dy;
